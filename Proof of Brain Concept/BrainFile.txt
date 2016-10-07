@@ -1,0 +1,19 @@
+Flip 1 1 1
+Move 2 5
+Sense Here 3 1 Food
+PickUp 9 11
+Sense Here 15 8 FoeHome
+Flip 1 6 7
+Turn Left 8
+Turn Right 8
+Move 2 5
+Move 10 16
+Sense Here 11 9 Home
+Drop 12
+Flip 5 13 14
+Turn Left 1
+Turn Right 1
+Sense Here 3 13 Food
+Flip 10 17 18
+Turn Left 9
+Turn Right 9

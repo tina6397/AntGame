@@ -1,0 +1,2 @@
+Proof Of Concept
+The brain we have created first starts with a Flip instruction which is used to start off the process of all the ants, sending it into the Move instruction. This brain then moves until it finds food. It also looks for food from the foe home and not just at food blobs. Once it finds food it returns home and drops the food and then moves back out to find food again. It does not make use of scent markers.
