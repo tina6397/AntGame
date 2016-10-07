@@ -1,0 +1,8 @@
+Sense Here 1 2 Friend;
+Mark 1 2;
+Unmark 1 2;
+PickUp 1 2;
+Drop 1;
+Turn Left 1;
+Move 1 2;
+Flip 1 2 3;

@@ -1,0 +1,11 @@
+Sense Here 1 2 Friend
+Sense Here 1 2 Foe
+Sense Here 1 2 FriendWithFood
+Sense Here 1 2 FoeWithFood
+Sense Here 1 2 Food
+Sense Here 1 2 Rock
+Sense Here 1 2 Marker 1
+Sense Here 1 2 FoeMarker
+Sense Here 1 2 Home
+Sense Here 1 2 FoeHome
+

@@ -1,0 +1,55 @@
+Flip 1 1 1
+Move 5 2
+Flip 2 3 4
+Turn Left 1
+Turn Right 1
+Sense Here 11 6 Food
+Sense Here 31 7 FoeHome
+Flip 6 8 1
+Flip 2 9 10
+Turn Left 1
+Turn Right 1
+PickUp 13 22
+Move 16 13
+Flip 2 14 15
+Turn Left 12
+Turn Right 12
+Sense Here 21 17 Home
+Flip 6 18 12
+Flip 2 19 20
+Turn Left 12
+Turn Right 12
+Drop 22
+Move 26 23
+Flip 2 24 25
+Turn Left 22
+Turn Right 22
+Sense Here 27 1 Home
+Flip 6 28 22
+Flip 2 29 30
+Turn Left 22
+Turn Right 22
+Sense Here 36 32 Food
+Sense Ahead 51 33 FoeHome
+Flip 2 34 35
+Turn Left 32
+Turn Right 32
+PickUp 38 32
+Move 41 38
+Flip 2 39 40
+Turn Left 22
+Turn Right 22
+Sense Here 42 46 FoeHome
+Flip 6 43 37
+Flip 2 44 45
+Turn Left 22
+Turn Right 22
+Drop 47
+Turn Right 48
+Turn Right 49
+Turn Right 50
+Move 31 1
+Move 31 52
+Flip 2 53 54
+Turn Left 31
+Turn Right 31

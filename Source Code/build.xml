@@ -1,0 +1,72 @@
+<project name="se" default="dist" basedir=".">
+    <description>
+        Ant 
+    </description>
+  <!-- set global properties for this build -->
+  <property name="ant.project.name" value="antsimple"/>
+  <property name="main_class_name" value="changeme"/>
+  <property name="jarname"  value="${ant.project.name}"/> 
+  <!-- set directories -->
+  <property name="src" location="SoftwareEngineering/src"/>
+  <property name="test" location="SoftwareEngineering/test"/>
+  <property name="build" location="SoftwareEngineering/build"/>
+
+  <path id="project.classpath">
+    <pathelement location="SoftwareEngineering/lib/junit.jar"/>
+    <pathelement location="${build}" />
+    <pathelement location="${lib}" />
+  </path>
+
+
+  <target name="init">
+    <!-- Create the time stamp -->
+    <tstamp/>
+    <!-- Create directories if needed -->
+    <mkdir dir="${build}"/>
+  </target>
+
+  <target name="compile" depends="init" description="compile the source " >
+    <!-- Compile the java code from ${src} into ${build} -->
+    <javac debug="true" 
+	   srcdir="${src}" 
+	   destdir="${build}"
+	   classpathref="project.classpath"/>
+    <!-- Copy files from ${src} into ${build} -->
+    <copy todir="${build}"> 
+        <fileset dir="${src}">
+          <exclude name="**/*.java"/>
+        </fileset>
+    </copy>
+  </target>
+
+<!-- 
+Broken??? 
+-->
+  <target name="test" depends="compiletest" description="run the tests " >
+    <junit printsummary="yes" fork="yes" haltonfailure="yes">
+      <formatter type="plain"/>
+      <batchtest fork="true">
+        <fileset dir="${test}">
+          <include name="**/*test*.java"/>
+        </fileset>
+      </batchtest>
+      <classpath refid="${project.classpath}" />
+    </junit>
+  </target>
+
+  <target name="compiletest" depends="compile"
+        description="compile the tests " >
+        <javac debug="true" 
+               srcdir="${test}" 
+               destdir="${build}"
+               classpathref="project.classpath" />
+  </target>
+
+
+  <target name="clean"
+        description="clean up" >
+    <!-- Delete the ${build} directory-->
+    <delete dir="${build}"/>
+  </target>
+</project>
+
